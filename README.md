@@ -12,5 +12,7 @@ Todo
 ====
 
 * Change URL for http://ps-dashboard.computecanada.ca/ ?
+* Uncomment *tests*, *groups* and *members* in tests-cc-allsites.conf when the
+  corresponding sites-*region*.conf files are available.
 * Define inter-region bandwidth tests
 * Add Canarie perfSonar nodes for tests within region?
