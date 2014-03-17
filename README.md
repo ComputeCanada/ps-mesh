@@ -11,5 +11,6 @@ perfSonar Mesh configuration files
 Todo
 ====
 
+* Change URL for http://ps-dashboard.computecanada.ca/ ?
 * Define inter-region bandwidth tests
 * Add Canarie perfSonar nodes for tests within region?
