@@ -125,7 +125,8 @@ def organization(sites, name, email, filename):
     email      {email}
   </administrator>
   {sites}
-</organization>""".format(sites=sites_string, name=name, email=email)
+</organization>
+""".format(sites=sites_string, name=name, email=email)
 
     fo = open(filename, "wb")
     fo.write(s)
@@ -139,7 +140,7 @@ if __name__ == '__main__':
         (('bdw-udes.ccs.usherbrooke.ca', 'lat-udes.ccs.usherbrooke.ca'), 'Univ. de Sherbrooke')],
         'Calcul-Quebec',
         'noc@calculquebec.ca',
-        'sites-cq.conf')
+        'sites-CalculQuebec.conf')
 
     organization([
         (('bdw-uvic.westgrid.ca', 'lat-uvic.westgrid.ca'), 'Univ. of Victoria'),
@@ -151,7 +152,7 @@ if __name__ == '__main__':
         (('bdw-umanitoba.westgrid.ca', 'lat-umanitoba.westgrid.ca'), 'Univ. of Manitoba')],
         'WestGrid',
         'systems@westgrid.ca',
-        'sites-wg.conf')
+        'sites-WestGrid.conf')
 
     organization([
         (('bdw-uwo.sharcnet.ca', 'lat-uwo.sharcnet.ca'), 'Univ. of Western Ontario'),
@@ -160,9 +161,9 @@ if __name__ == '__main__':
         #(('bdw-uog.sharcnet.ca', 'lat-uog.sharcnet.ca'), 'Univ. of Guelph'),  # Not responding
         (('bdw-utoronto.scinet.utoronto.ca', 'lat-utoronto.scinet.utoronto.ca'), 'Univ. of Toronto'),
         (('bdw.hpcvl.queensu.ca', 'lat.hpcvl.queensu.ca'), 'Queens Univ.')],
-        'Sharcnet',
+        'SHARCNET',
         'TODO',
-        'sites-co.conf')
+        'sites-SHARCNET.conf')
 
     organization([
         (('ps-bandwidth.scinet.utoronto.ca', None), 'SciNet Toronto')],

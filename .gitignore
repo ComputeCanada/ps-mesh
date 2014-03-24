@@ -7,6 +7,8 @@
 
 # Ignore .json, these should be generated using the .config files
 *.json
+sites-*.conf
+all.conf
 
 # Numerous always-ignore extensions
 *~
