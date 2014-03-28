@@ -67,7 +67,7 @@ def latencyHostDescription(hostname, name):
     <measurement_archive>
       type        perfsonarbuoy/owamp
       read_url    http://{hostname}:8085/perfSONAR_PS/services/pSB
-      write_url   {hostname}:861
+      write_url   {hostname}:8570
     </measurement_archive>
 
     <measurement_archive>
