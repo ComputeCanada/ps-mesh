@@ -1,0 +1,81 @@
+{
+    "title": "Compute Canada perfSONAR Dashboard",
+    "defaultDashboard": "Compute Canada Sites",
+    "grids":{
+        "Compute Canada One Way Latency Test":{
+            "cellSize": 16,
+            "cellPadding": 4,
+            "textBlockSize": 150,
+        },
+        "Compute Canada Bandwidth Test":{
+            "cellSize": 16,
+            "cellPadding": 4,
+            "textBlockSize": 150,
+        },
+        "WestGrid One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "WestGrid Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "WestGrid 10G to 10G Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "WestGrid to Non-WestGrid One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "WestGrid to Non-WestGrid Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "Compute Ontario One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "Compute Ontario Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "Calcul Quebec One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "Calcul Quebec Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "ACENet One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "ACENet Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "CANARIE One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "CANARIE Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+    },
+}
