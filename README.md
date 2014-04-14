@@ -8,6 +8,8 @@ perfSonar Mesh configuration files
 * tests-cc-latency.conf: definition of the full mesh latency tests for all CC sites.
 * groups-*region*.conf: definition of mesh or disjoined groups.
 * tests-*region*.conf: tests to run between group members.
+* maddash.yaml: maddash server configuration (/etc/maddash/maddash-server/maddash.yaml).
+* maddash-server-config.json: maddash server configuration (/opt/maddash/maddash-webui/etc/config.json).
 
 Todo
 ====
