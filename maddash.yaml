@@ -1,1 +1,714 @@
- 
+database: /var/lib/maddash/
+
+serverHost: "localhost"
+
+http: 
+    port: 8881
+
+groups:
+
+    CCOwampHosts: 
+        - "lat-uvic.westgrid.ca"
+        - "lat-ubc.westgrid.ca"
+        - "lat-sfu.westgrid.ca"
+        - "lat-ucalgary.westgrid.ca"
+        - "lat-ualberta.westgrid.ca"
+        - "lat-usask.westgrid.ca"
+        - "lat-umanitoba.westgrid.ca"
+        - "lat-uwo.sharcnet.ca"
+        - "lat-uw.sharcnet.ca"
+        - "lat-uog.sharcnet.ca"
+        - "lat-mac.sharcnet.ca"
+        - "lat-utoronto.scinet.utoronto.ca"
+        - "lat.hpcvl.queensu.ca"
+        - "lat-umontreal.calculquebec.ca"
+        - "lat-mcgill.calculquebec.ca"
+        - "lat-udes.ccs.usherbrooke.ca"
+        - "lat-ulaval.calculquebec.ca"
+        - "lat-mta.ace-net.ca"
+        - "lat-acadiau.ace-net.ca"
+        - "lat-stfx.ace-net.ca"
+        - "lat-cbu.ace-net.ca"
+
+    CCBwctlHosts :
+        - "bdw-uvic.westgrid.ca"
+        - "bdw-ubc.westgrid.ca"
+        - "bdw-sfu.westgrid.ca"
+        - "bdw-ucalgary.westgrid.ca"
+        - "bdw-ualberta.westgrid.ca"
+        - "bdw-usask.westgrid.ca"
+        - "bdw-umanitoba.westgrid.ca"
+        - "bdw-uwo.sharcnet.ca"
+        - "bdw-uw.sharcnet.ca"
+        - "bdw-uog.sharcnet.ca"
+        - "bdw-mac.sharcnet.ca"
+        - "bdw-utoronto.scinet.utoronto.ca"
+        - "bdw.hpcvl.queensu.ca"
+        - "bdw-umontreal.calculquebec.ca"
+        - "bdw-mcgill.calculquebec.ca"
+        - "bdw-udes.ccs.usherbrooke.ca"
+        - "bdw-ulaval.calculquebec.ca"
+        - "bdw-mta.ace-net.ca"
+        - "bdw-acadiau.ace-net.ca"
+        - "bdw-stfx.ace-net.ca"
+        - "bdw-cbu.ace-net.ca"
+
+    WestGridOwampHosts :
+        - "lat-uvic.westgrid.ca"
+        - "lat-ubc.westgrid.ca"
+        - "lat-sfu.westgrid.ca"
+        - "lat-ucalgary.westgrid.ca"
+        - "lat-ualberta.westgrid.ca"
+        - "lat-usask.westgrid.ca"
+        - "lat-umanitoba.westgrid.ca"
+
+    WestGridBwctlHosts :
+        - "bdw-uvic.westgrid.ca"
+        - "bdw-ubc.westgrid.ca"
+        - "bdw-sfu.westgrid.ca"
+        - "bdw-ucalgary.westgrid.ca"
+        - "bdw-ualberta.westgrid.ca"
+        - "bdw-usask.westgrid.ca"
+        - "bdw-umanitoba.westgrid.ca"
+
+    CompOntOwampHosts :
+        - "lat-uwo.sharcnet.ca"
+        - "lat-uw.sharcnet.ca"
+        - "lat-uog.sharcnet.ca"
+        - "lat-mac.sharcnet.ca"
+        - "lat-utoronto.scinet.utoronto.ca"
+        - "lat.hpcvl.queensu.ca"
+
+    CompOntBwctlHosts :
+        - "bdw-uwo.sharcnet.ca"
+        - "bdw-uw.sharcnet.ca"
+        - "bdw-uog.sharcnet.ca"
+        - "bdw-mac.sharcnet.ca"
+        - "bdw-utoronto.scinet.utoronto.ca"
+        - "bdw.hpcvl.queensu.ca"
+
+    CQOwampHosts :
+        - "lat-umontreal.calculquebec.ca"
+        - "lat-mcgill.calculquebec.ca"
+        - "lat-udes.ccs.usherbrooke.ca"
+        - "lat-ulaval.calculquebec.ca"
+
+    CQBwctlHosts :
+        - "bdw-umontreal.calculquebec.ca"
+        - "bdw-mcgill.calculquebec.ca"
+        - "bdw-udes.ccs.usherbrooke.ca"
+        - "bdw-ulaval.calculquebec.ca"
+
+    ACENetOwampHosts :
+        - "lat-mta.ace-net.ca"
+        - "lat-acadiau.ace-net.ca"
+        - "lat-stfx.ace-net.ca"
+        - "lat-cbu.ace-net.ca"
+        - "lat-gp-ftn.nbren.ca"
+
+    ACENetBwctlHosts :
+        - "bdw-mta.ace-net.ca"
+        - "bdw-acadiau.ace-net.ca"
+        - "bdw-stfx.ace-net.ca"
+        - "bdw-cbu.ace-net.ca"
+        - "bdw-gp-ftn.nbren.ca"
+
+    SelectWGOwampHosts :
+        - "lat-sfu.westgrid.ca"
+        - "lat-ubc.westgrid.ca"
+        - "lat-ucalgary.westgrid.ca"
+        - "lat-usask.westgrid.ca"
+
+    NonWestGridOwampHosts :
+        - "lat-utoronto.scinet.utoronto.ca"
+        - "lat-umontreal.calculquebec.ca"
+        - "lat-ulaval.calculquebec.ca"
+        - "lat-clgr2pfs1.canarie.ca"
+        - "lat-toro1pfs1.canarie.ca"
+        - "lat-mtrl2pfs1.canarie.ca"
+        - "pfs1-lat.srry1.bc.net"
+
+    WestGridBwctl10GHosts :
+        - "bdw-uvic.westgrid.ca"
+        - "bdw-ubc.westgrid.ca"
+        - "bdw-sfu.westgrid.ca"
+        - "bdw-ucalgary.westgrid.ca"
+        - "bdw-usask.westgrid.ca"
+
+    SelectWGBwctlHosts :
+        - "bdw-sfu.westgrid.ca"
+        - "bdw-ubc.westgrid.ca"
+        - "bdw-ucalgary.westgrid.ca"
+        - "bdw-usask.westgrid.ca"
+
+    NonWestGridBwctlHosts :
+        - "bdw-ulaval.calculquebec.ca"
+        - "bdw-umontreal.calculquebec.ca"
+        - "bdw-utoronto.scinet.utoronto.ca"
+        - "bdw-mtrl2pfs2.canarie.ca"
+        - "bdw-toro1pfs2.canarie.ca"
+        - "bdw-clgr2pfs2.canarie.ca"
+        - "pfs2-bw.srry1.bc.net"
+
+    CANARIEOwampHosts :
+        - "lat-hlfx1pfs1.canarie.ca"
+        - "lat-mtrl2pfs1.canarie.ca"
+        - "lat-toro1pfs1.canarie.ca"
+        - "lat-wnpg1pfs1.canarie.ca"
+        - "lat-clgr2pfs1.canarie.ca"
+        - "lat-vncv1pfs1.canarie.ca"
+
+    CANARIEBwctlHosts :
+        - "bdw-hlfx1pfs2.canarie.ca"
+        - "bdw-mtrl2pfs2.canarie.ca"
+        - "bdw-toro1pfs2.canarie.ca"
+        - "bdw-wnpg1pfs2.canarie.ca"
+        - "bdw-clgr2pfs2.canarie.ca"
+        - "bdw-vncv1pfs2.canarie.ca"
+
+groupMembers:
+        - id: "lat-uvic.westgrid.ca"
+          label: "Univ. of Victoria"
+
+        - id: "lat-ubc.westgrid.ca"
+          label: "Univ. of BC"
+
+        - id: "lat-sfu.westgrid.ca"
+          label: "Simon Fraser Univ."
+
+        - id: "lat-ucalgary.westgrid.ca"
+          label: "Univ. of Calgary"
+
+        - id: "lat-ualberta.westgrid.ca"
+          label: "Univ. of Alberta"
+
+        - id: "lat-usask.westgrid.ca"
+          label: "Univ. of Saskatchewan"
+
+        - id: "lat-umanitoba.westgrid.ca"
+          label: "Univ. of Manitoba"
+
+        - id: "lat-uwo.sharcnet.ca"
+          label: "Univ. of Western Ontario"
+
+        - id: "lat-uw.sharcnet.ca"
+          label: "Univ. of Waterloo"
+
+        - id: "lat-mac.sharcnet.ca"
+          label: "McMaster Univ."
+
+        - id: "lat-uog.sharcnet.ca"
+          label: "Univ. of Guelph"
+
+        - id: "lat-utoronto.scinet.utoronto.ca"
+          label: "Univ. of Toronto"
+
+        - id: "lat.hpcvl.queensu.ca"
+          label: "Queens Univ."
+
+        - id: "lat-mcgill.calculquebec.ca"
+          label: "McGill Univ."
+
+        - id: "lat-umontreal.calculquebec.ca"
+          label: "Univ. de Montreal"
+
+        - id: "lat-udes.ccs.usherbrooke.ca"
+          label: "Univ. de Sherbrooke"
+
+        - id: "lat-ulaval.calculquebec.ca"
+          label: "Univ. Laval"
+
+        - id: "lat-stfx.ace-net.ca"
+          label: "St. Francis Xavier Univ."
+
+        - id: "lat-mta.ace-net.ca"
+          label: "Mount Allison Univ."
+
+        - id: "lat-acadiau.ace-net.ca"
+          label: "Acadia Univ."
+
+        - id: "lat-cbu.ace-net.ca"
+          label: "Univ. of Cape Breton"
+
+        - id: "lat-hlfx1pfs1.canarie.ca"
+          label: "CANARIE Halifax"
+
+        - id: "lat-mtrl2pfs1.canarie.ca"
+          label: "CANARIE Montreal"
+
+        - id: "lat-toro1pfs1.canarie.ca"
+          label: "CANARIE Toronto"
+
+        - id: "lat-wnpg1pfs1.canarie.ca"
+          label: "CANARIE Winnipeg"
+
+        - id: "lat-clgr2pfs1.canarie.ca"
+          label: "CANARIE Calgary"
+
+        - id: "lat-vncv1pfs1.canarie.ca"
+          label: "CANARIE Vancouver"
+
+        - id: "lat-gp-ftn.nbren.ca"
+          label: "New Brunswick REN"
+
+        - id: "pfs1-lat.srry1.bc.net"
+          label: "BCNET Surrey"
+
+        - id: "lat-gp-ftn.nbren.ca"
+          label: "New Brunswick REN"
+
+        - id: "bdw-uvic.westgrid.ca"
+          label: "Univ. of Victoria"
+
+        - id: "bdw-ubc.westgrid.ca"
+          label: "Univ. of BC"
+
+        - id: "bdw-sfu.westgrid.ca"
+          label: "Simon Fraser Univ."
+
+        - id: "bdw-ucalgary.westgrid.ca"
+          label: "Univ. of Calgary"
+
+        - id: "bdw-ualberta.westgrid.ca"
+          label: "Univ. of Alberta"
+
+        - id: "bdw-usask.westgrid.ca"
+          label: "Univ. of Saskatchewan"
+
+        - id: "bdw-umanitoba.westgrid.ca"
+          label: "Univ. of Manitoba"
+
+        - id: "bdw-uwo.sharcnet.ca"
+          label: "Univ. of Western Ontario"
+
+        - id: "bdw-uw.sharcnet.ca"
+          label: "Univ. of Waterloo"
+
+        - id: "bdw-mac.sharcnet.ca"
+          label: "McMaster Univ."
+
+        - id: "bdw-uog.sharcnet.ca"
+          label: "Univ. of Guelph"
+
+        - id: "bdw-utoronto.scinet.utoronto.ca"
+          label: "Univ. of Toronto"
+
+        - id: "bdw.hpcvl.queensu.ca"
+          label: "Queens Univ."
+
+        - id: "bdw-mcgill.calculquebec.ca"
+          label: "McGill Univ."
+
+        - id: "bdw-umontreal.calculquebec.ca"
+          label: "Univ. de Montreal"
+
+        - id: "bdw-udes.ccs.usherbrooke.ca"
+          label: "Univ. de Sherbrooke"
+
+        - id: "bdw-ulaval.calculquebec.ca"
+          label: "Univ. Laval"
+
+        - id: "bdw-stfx.ace-net.ca"
+          label: "St. Francis Xavier Univ."
+
+        - id: "bdw-mta.ace-net.ca"
+          label: "Mount Allison Univ."
+
+        - id: "bdw-acadiau.ace-net.ca"
+          label: "Acadia Univ."
+
+        - id: "bdw-cbu.ace-net.ca"
+          label: "Univ. of Cape Breton"
+
+        - id: "bdw-hlfx1pfs2.canarie.ca"
+          label: "CANARIE Halifax"
+
+        - id: "bdw-mtrl2pfs2.canarie.ca"
+          label: "CANARIE Montreal"
+
+        - id: "bdw-toro1pfs2.canarie.ca"
+          label: "CANARIE Toronto"
+
+        - id: "bdw-wnpg1pfs2.canarie.ca"
+          label: "CANARIE Winnipeg"
+
+        - id: "bdw-clgr2pfs2.canarie.ca"
+          label: "CANARIE Calgary"
+
+        - id: "bdw-vncv1pfs2.canarie.ca"
+          label: "CANARIE Vancouver"
+
+        - id: "pfs2-bw.srry1.bc.net"
+          label: "BCNET Surrey"
+
+        - id: "bdw-gp-ftn.nbren.ca"
+          label: "New Brunswick REN"
+
+checks:
+    owampLossCheck :
+        name: "Loss"
+        description: "Loss from %row to %col (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl: 
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/delayGraph.cgi?url=%maUrl&dst=%col&src=%row&length=172800"
+            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0 -r 1800 -l -p -s %row -d %col"
+        checkInterval: 1800
+        retryInterval: 300
+        retryAttempts: 3
+        timeout: 60
+    
+    owampLossRevCheck :
+        name: "Loss Reverse"
+        description: "Loss from %col to %row (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl: 
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/delayGraph.cgi?url=%maUrl&dst=%row&src=%col&length=172800"
+            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0 -r 1800 -l -p -s %col -d %row"
+        checkInterval: 1800
+        retryInterval: 300
+        retryAttempts: 3
+        timeout: 60
+    
+    bwctlCheck :
+        name: "Throughput"
+        description: "Throughput from %row to %col (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl:
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/bandwidthGraph.cgi?url=%maUrl&dst=%col&src=%row&length=2592000"
+            command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w .5: -c .1: -r 86400 -s %row -d %col"
+        checkInterval: 7200
+        retryInterval: 600
+        retryAttempts: 3
+        timeout: 60
+    
+    bwctl10GCheck :
+        name: "Throughput"
+        description: "Throughput from %row to %col (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl:
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/bandwidthGraph.cgi?url=%maUrl&dst=%col&src=%row&length=2592000"
+            command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w 2.0: -c .2: -r 86400 -s %row -d %col"
+        checkInterval: 7200
+        retryInterval: 600
+        retryAttempts: 3
+        timeout: 60
+    
+    bwctlRevCheck :
+        name: "Throughput Reverse"
+        description: "Throughput from %col to %row (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl:
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/bandwidthGraph.cgi?url=%maUrl&dst=%row&src=%col&length=2592000"
+            command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w .5: -c .1: -r 86400 -s %col -d %row"
+        checkInterval: 7200
+        retryInterval: 600
+        retryAttempts: 3
+        timeout: 60
+
+    bwctl10GRevCheck :
+        name: "Throughput Reverse"
+        description: "Throughput from %col to %row (according to %row MA)"
+        type: "net.es.maddash.checks.PSNagiosCheck"
+        params:
+            maUrl:
+                default: "http://%row:8085/perfSONAR_PS/services/pSB"
+            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/bandwidthGraph.cgi?url=%maUrl&dst=%row&src=%col&length=2592000"
+            command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w 2.0: -c .2: -r 86400 -s %col -d %row"
+        checkInterval: 7200
+        retryInterval: 600
+        retryAttempts: 3
+        timeout: 60
+
+grids:
+
+    - name: "WestGrid One Way Latency Test"
+      rows: "WestGridOwampHosts"
+      columns: "WestGridOwampHosts"
+      checks: 
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all" 
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Compute Ontario One Way Latency Test"
+      rows: "CompOntOwampHosts"
+      columns: "CompOntOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Calcul Quebec One Way Latency Test"
+      rows: "CQOwampHosts"
+      columns: "CQOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "ACENet One Way Latency Test"
+      rows: "ACENetOwampHosts"
+      columns: "ACENetOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Compute Canada One Way Latency Test"
+      rows: "CCOwampHosts"
+      columns: "CCOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "WestGrid Bandwidth Test"
+      rows: "WestGridBwctlHosts"
+      columns: "WestGridBwctlHosts"
+      checks: 
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all" 
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Compute Ontario Bandwidth Test"
+      rows: "CompOntBwctlHosts"
+      columns: "CompOntBwctlHosts"
+      checks:
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Calcul Quebec Bandwidth Test"
+      rows: "CQBwctlHosts"
+      columns: "CQBwctlHosts"
+      checks:
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "ACENet Bandwidth Test"
+      rows: "ACENetBwctlHosts"
+      columns: "ACENetBwctlHosts"
+      checks:
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "Compute Canada Bandwidth Test"
+      rows: "CCBwctlHosts"
+      columns: "CCBwctlHosts"
+      checks:
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "WestGrid 10G to 10G Bandwidth Test"
+      rows: "WestGridBwctl10GHosts"
+      columns: "WestGridBwctl10GHosts"
+      checks:
+        - "bwctl10GCheck"
+        - "bwctl10GRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 2000Mbps"
+            warning: "Throughput >= 200Mbps"
+            critical: "Throughput < 200Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "WestGrid to Non-WestGrid One Way Latency Test"
+      rows: "SelectWGOwampHosts"
+      columns: "NonWestGridOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "WestGrid to Non-WestGrid Bandwidth Test"
+      rows: "SelectWGBwctlHosts"
+      columns: "NonWestGridBwctlHosts"
+      checks:
+        - "bwctl10GCheck"
+        - "bwctl10GRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 2000Mbps"
+            warning: "Throughput >= 200Mbps"
+            critical: "Throughput < 200Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "CANARIE One Way Latency Test"
+      rows: "CANARIEOwampHosts"
+      columns: "CANARIEOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "CANARIE Bandwidth Test"
+      rows: "CANARIEBwctlHosts"
+      columns: "CANARIEBwctlHosts"
+      checks:
+        - "bwctlCheck"
+        - "bwctlRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 500Mbps"
+            warning: "Throughput >= 100Mbps"
+            critical: "Throughput < 100Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+dashboards:
+    - name: "Compute Canada Sites"
+      grids:
+        - name: "Compute Canada One Way Latency Test"
+        - name: "Compute Canada Bandwidth Test"
+
+    - name: "WestGrid Sites"
+      grids:
+        - name: "WestGrid One Way Latency Test"
+        - name: "WestGrid Bandwidth Test"
+        - name: "WestGrid 10G to 10G Bandwidth Test"
+        - name: "WestGrid to Non-WestGrid One Way Latency Test"
+        - name: "WestGrid to Non-WestGrid Bandwidth Test"
+
+    - name: "Compute Ontario Sites"
+      grids:
+        - name: "Compute Ontario One Way Latency Test"
+        - name: "Compute Ontario Bandwidth Test"
+
+    - name: "Calcul Quebec Sites"
+      grids:
+        - name: "Calcul Quebec One Way Latency Test"
+        - name: "Calcul Quebec Bandwidth Test"
+
+    - name: "ACENet Sites"
+      grids:
+        - name: "ACENet One Way Latency Test"
+        - name: "ACENet Bandwidth Test"
+
+    - name: "CANARIE Sites"
+      grids:
+        - name: "CANARIE One Way Latency Test"
+        - name: "CANARIE Bandwidth Test"
