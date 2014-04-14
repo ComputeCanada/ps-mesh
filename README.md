@@ -3,7 +3,7 @@ ps-mesh
 
 perfSonar Mesh configuration files
 
-* sites-*region*.conf: Definition of local persSonar nodes.
+* sites-*region*.conf: Definition of local perfSonar nodes.
 * sites-CC.conf: global mesh description
 * tests-cc-latency.conf: definition of the full mesh latency tests for all CC sites.
 * groups-*region*.conf: definition of mesh or disjoined groups.
