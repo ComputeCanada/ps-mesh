@@ -549,16 +549,16 @@ grids:
       rows: "CQBwctlHosts"
       columns: "CQBwctlHosts"
       checks:
-        - "bwctlCheck"
-        - "bwctlRevCheck"
+        - "bwctl10GCheck"
+        - "bwctl10GRevCheck"
       rowOrder: "group"
       colOrder: "group"
       excludeSelf: 1
       columnAlgorithm: "all"
       statusLabels:
-            ok: "Throughput >= 500Mbps"
-            warning: "Throughput >= 100Mbps"
-            critical: "Throughput < 100Mbps"
+            ok: "Throughput >= 2000Mbps"
+            warning: "Throughput >= 200Mbps"
+            critical: "Throughput < 200Mbps"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
