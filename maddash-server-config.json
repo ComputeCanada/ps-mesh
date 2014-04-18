@@ -77,5 +77,15 @@
             "cellPadding": 4,
             "textBlockSize": 175,
         },
+        "BCNET One Way Latency Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
+        "BCNET Bandwidth Test":{
+            "cellSize": 18,
+            "cellPadding": 4,
+            "textBlockSize": 175,
+        },
     },
 }

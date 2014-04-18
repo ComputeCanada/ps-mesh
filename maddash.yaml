@@ -155,6 +155,7 @@ groups:
         - "lat-mtrl2pfs1.canarie.ca"
         - "lat-toro1pfs1.canarie.ca"
         - "lat-wnpg1pfs1.canarie.ca"
+        - "sask1pfs2.canarie.ca"
         - "lat-clgr2pfs1.canarie.ca"
         - "lat-vncv1pfs1.canarie.ca"
 
@@ -163,7 +164,24 @@ groups:
         - "bdw-mtrl2pfs2.canarie.ca"
         - "bdw-toro1pfs2.canarie.ca"
         - "bdw-wnpg1pfs2.canarie.ca"
+        - "sask1pfs2.canarie.ca"
         - "bdw-clgr2pfs2.canarie.ca"
+        - "bdw-vncv1pfs2.canarie.ca"
+
+    BCNETOwampHosts :
+        - "pfs1-lat.vctr1.bc.net"
+        - "pfs1-lat.srry1.bc.net"
+        - "pfs1-lat.pgrg1.bc.net"
+        - "pfs1-lat.kmlp2.bc.net"
+        - "pfs1-lat.klwn1.bc.net"
+        - "lat-vncv1pfs1.canarie.ca"
+
+    BCNETBwctlHosts :
+        - "pfs2-bw.vctr1.bc.net"
+        - "pfs2-bw.srry1.bc.net"
+        - "pfs2-bw.pgrg1.bc.net"
+        - "pfs2-bw.kmlp2.bc.net"
+        - "pfs2-bw.klwn1.bc.net"
         - "bdw-vncv1pfs2.canarie.ca"
 
 groupMembers:
@@ -254,8 +272,17 @@ groupMembers:
         - id: "pfs1-lat.srry1.bc.net"
           label: "BCNET Surrey"
 
-        - id: "lat-gp-ftn.nbren.ca"
-          label: "New Brunswick REN"
+        - id: "pfs1-lat.vctr1.bc.net"
+          label: "BCNET Victoria"
+
+        - id: "pfs1-lat.klwn1.bc.net"
+          label: "BCNET Kelowna"
+
+        - id: "pfs1-lat.kmlp2.bc.net"
+          label: "BCNET Kamloops"
+
+        - id: "pfs1-lat.pgrg1.bc.net"
+          label: "BCNET Prince George"
 
         - id: "bdw-uvic.westgrid.ca"
           label: "Univ. of Victoria"
@@ -332,17 +359,32 @@ groupMembers:
         - id: "bdw-wnpg1pfs2.canarie.ca"
           label: "CANARIE Winnipeg"
 
+        - id: "sask1pfs2.canarie.ca"
+          label: "CANARIE Saskatoon"
+
         - id: "bdw-clgr2pfs2.canarie.ca"
           label: "CANARIE Calgary"
 
         - id: "bdw-vncv1pfs2.canarie.ca"
           label: "CANARIE Vancouver"
 
+        - id: "bdw-gp-ftn.nbren.ca"
+          label: "New Brunswick REN"
+
         - id: "pfs2-bw.srry1.bc.net"
           label: "BCNET Surrey"
 
-        - id: "bdw-gp-ftn.nbren.ca"
-          label: "New Brunswick REN"
+        - id: "pfs2-bw.vctr1.bc.net"
+          label: "BCNET Victoria"
+
+        - id: "pfs2-bw.klwn1.bc.net"
+          label: "BCNET Kelowna"
+
+        - id: "pfs2-bw.kmlp2.bc.net"
+          label: "BCNET Kamloops"
+
+        - id: "pfs2-bw.pgrg1.bc.net"
+          label: "BCNET Prince George"
 
 checks:
     owampLossCheck :
@@ -679,6 +721,39 @@ grids:
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
+    - name: "BCNET One Way Latency Test"
+      rows: "BCNETOwampHosts"
+      columns: "BCNETOwampHosts"
+      checks:
+        - "owampLossCheck"
+        - "owampLossRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Loss is 0"
+            critical: "Loss is greater than 0"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
+    - name: "BCNET Bandwidth Test"
+      rows: "BCNETBwctlHosts"
+      columns: "BCNETBwctlHosts"
+      checks:
+        - "bwctl10GCheck"
+        - "bwctl10GRevCheck"
+      rowOrder: "group"
+      colOrder: "group"
+      excludeSelf: 1
+      columnAlgorithm: "all"
+      statusLabels:
+            ok: "Throughput >= 2000Mbps"
+            warning: "Throughput >= 200Mbps"
+            critical: "Throughput < 200Mbps"
+            unknown: "Unable to retrieve data"
+            notrun: "Check has not yet run"
+
 dashboards:
     - name: "Compute Canada Sites"
       grids:
@@ -712,3 +787,8 @@ dashboards:
       grids:
         - name: "CANARIE One Way Latency Test"
         - name: "CANARIE Bandwidth Test"
+
+    - name: "BCNET Sites"
+      grids:
+        - name: "BCNET One Way Latency Test"
+        - name: "BCNET Bandwidth Test"
