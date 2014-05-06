@@ -395,7 +395,7 @@ checks:
             maUrl: 
                 default: "http://%row:8085/perfSONAR_PS/services/pSB"
             graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/delayGraph.cgi?url=%maUrl&dst=%col&src=%row&length=172800"
-            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0 -r 1800 -l -p -s %row -d %col"
+            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0.01 -r 1800 -l -p -s %row -d %col"
         checkInterval: 1800
         retryInterval: 300
         retryAttempts: 3
@@ -409,7 +409,7 @@ checks:
             maUrl: 
                 default: "http://%row:8085/perfSONAR_PS/services/pSB"
             graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/delayGraph.cgi?url=%maUrl&dst=%row&src=%col&length=172800"
-            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0 -r 1800 -l -p -s %col -d %row"
+            command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w 0 -c 0.01 -r 1800 -l -p -s %col -d %row"
         checkInterval: 1800
         retryInterval: 300
         retryAttempts: 3
@@ -485,7 +485,8 @@ grids:
       columnAlgorithm: "all" 
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -501,7 +502,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -517,7 +519,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -533,7 +536,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -549,7 +553,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -976,7 +981,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -1009,7 +1015,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
@@ -1042,7 +1049,8 @@ grids:
       columnAlgorithm: "all"
       statusLabels:
             ok: "Loss is 0"
-            critical: "Loss is greater than 0"
+            warning: "Loss is greater than 0"
+            critical: "Loss is greater than 0.01"
             unknown: "Unable to retrieve data"
             notrun: "Check has not yet run"
 
