@@ -1,6 +1,7 @@
 {
     "title": "Compute Canada perfSONAR Dashboard",
     "defaultDashboard": "Compute Canada Sites",
+    "enableAdminUI": true,
     "grids":{
         "Compute Canada One Way Latency Test":{
             "cellSize": 16,
