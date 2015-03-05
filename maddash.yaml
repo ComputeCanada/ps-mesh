@@ -394,7 +394,7 @@ checks:
         params:
             maUrl: 
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row&length=14400"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row"
             command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w ~:0.001 -c ~:0.01 -r 1800 -l -p -s %row -d %col"
         checkInterval: 1800
         retryInterval: 300
@@ -408,7 +408,7 @@ checks:
         params:
             maUrl: 
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col&length=14400"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col"
             command: "/opt/perfsonar_ps/nagios/bin/check_owdelay.pl -u %maUrl -w ~:0.001 -c ~:0.01 -r 1800 -l -p -s %col -d %row"
         checkInterval: 1800
         retryInterval: 300
@@ -422,7 +422,7 @@ checks:
         params:
             maUrl:
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row&length=2592000"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row"
             command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w .5: -c .1: -r 86400 -s %row -d %col"
         checkInterval: 7200
         retryInterval: 600
@@ -436,7 +436,7 @@ checks:
         params:
             maUrl:
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row&length=2592000"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%col&source=%row"
             command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w 2.0: -c .2: -r 86400 -s %row -d %col"
         checkInterval: 7200
         retryInterval: 600
@@ -450,7 +450,7 @@ checks:
         params:
             maUrl:
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col&length=2592000"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col"
             command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w .5: -c .1: -r 86400 -s %col -d %row"
         checkInterval: 7200
         retryInterval: 600
@@ -464,7 +464,7 @@ checks:
         params:
             maUrl:
                 default: "http://%row/esmond/perfsonar/archive"
-            graphUrl: "http://ps-dashboard.computecanada.ca/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col&length=2592000"
+            graphUrl: "/serviceTest/graphWidget.cgi?url=%maUrl&dest=%row&source=%col"
             command:  "/opt/perfsonar_ps/nagios/bin/check_throughput.pl -u %maUrl -w 2.0: -c .2: -r 86400 -s %col -d %row"
         checkInterval: 7200
         retryInterval: 600
