@@ -638,7 +638,6 @@ grids:
       excludeChecks:
         bdw-uvic.westgrid.ca:
           - "bdw-uwo.sharcnet.ca"
-          - "bdw-uw.sharcnet.ca"
           - "bdw-uog.sharcnet.ca"
           - "bdw-mac.sharcnet.ca"
           - "bdw-utoronto.scinet.utoronto.ca"
@@ -653,7 +652,6 @@ grids:
           - "bdw-cbu.ace-net.ca"
         bdw-ubc.westgrid.ca:
           - "bdw-uwo.sharcnet.ca"
-          - "bdw-uw.sharcnet.ca"
           - "bdw-uog.sharcnet.ca"
           - "bdw-mac.sharcnet.ca"
           - "bdw.hpcvl.queensu.ca"
@@ -665,7 +663,6 @@ grids:
           - "bdw-cbu.ace-net.ca"
         bdw-sfu.westgrid.ca:
           - "bdw-uwo.sharcnet.ca"
-          - "bdw-uw.sharcnet.ca"
           - "bdw-uog.sharcnet.ca"
           - "bdw-mac.sharcnet.ca"
           - "bdw.hpcvl.queensu.ca"
@@ -677,7 +674,6 @@ grids:
           - "bdw-cbu.ace-net.ca"
         bdw-ucalgary.westgrid.ca:
           - "bdw-uwo.sharcnet.ca"
-          - "bdw-uw.sharcnet.ca"
           - "bdw-uog.sharcnet.ca"
           - "bdw-mac.sharcnet.ca"
           - "bdw.hpcvl.queensu.ca"
@@ -704,7 +700,6 @@ grids:
           - "bdw-cbu.ace-net.ca"
         bdw-usask.westgrid.ca:
           - "bdw-uwo.sharcnet.ca"
-          - "bdw-uw.sharcnet.ca"
           - "bdw-uog.sharcnet.ca"
           - "bdw-mac.sharcnet.ca"
           - "bdw.hpcvl.queensu.ca"
